@@ -46,6 +46,26 @@
 
 ## 安装步骤
 
+### 方式一：Docker部署（推荐）
+
+这是最简单的部署方式，适合生产环境：
+
+```bash
+# 1. 配置环境变量
+cp .env.example .env
+# 编辑 .env 文件，填入你的配置
+
+# 2. 构建并启动
+docker-compose up -d
+
+# 3. 查看日志
+docker-compose logs -f backend
+```
+
+详细说明请查看 [DOCKER_DEPLOY.md](DOCKER_DEPLOY.md)
+
+### 方式二：本地开发部署
+
 ### 1. 后端设置
 
 ```bash
